@@ -6,7 +6,7 @@
 // import Footer from '../layouts/Footer'
 import "../styles/main.css";
 
-import Header from "../layouts/Header";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
