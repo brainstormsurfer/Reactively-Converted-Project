@@ -1,11 +1,18 @@
-const NavLink = ({ href, current, text }) => {
-
+const NavLink = ({ href, current, text, fromHeader }) => {
   return (
-    <li>
-      <a href={href} className={current ? "current" : ""}>
-        {text}
-      </a>
-    </li>
+    fromHeader ? (
+      <li>
+        <a href={href} className="btn-light">
+          {text}
+        </a>
+      </li>
+    ) : (
+      <li>
+        <a href={href} className={current ? "current" : ""}>
+          {text}
+        </a>
+      </li>
+    )
   );
 };
 
