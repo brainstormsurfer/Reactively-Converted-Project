@@ -1,5 +1,5 @@
-import logo from "../assets/img/logo.png";
-import Navbar from "../layouts/Navbar.jsx";
+import logo from "../../../assets/img/logo.png";
+import Navbar from "../../../layouts/Navbar.jsx";
 import HeaderContent from "./HeaderContent";
 
 const Header = () => {

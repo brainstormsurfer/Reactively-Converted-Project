@@ -1,4 +1,4 @@
-import NavLinks from "../components/NavLinks";
+import NavLinks from "../components/sections/HeaderSection/NavLinks";
 
 const Navbar = ({ logoSrc }) => {
   return (
