@@ -1,13 +1,13 @@
+import SocialLink from "../components/SocialLink"
+import { socialLinks } from "../utils/website_data"
+
 const Footer = () => {
   return (
-    <footer id="main-footer">
+    <footer className="main-footer">
   <div className="footer-content container">
     <p>Copyright © 2019. All Rights Reserved</p>
     <div className="social">
-      <i className="fab fa-twitter" />
-      <i className="fab fa-facebook" />
-      <i className="fab fa-instagram" />
-      <i className="fab fa-linkedin" />
+      {socialLinks.map(({id, icon}) => <SocialLink key={id} icon={icon} />)}
     </div>
   </div>
 </footer>

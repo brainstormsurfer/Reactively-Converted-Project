@@ -3,7 +3,7 @@ import NavLinks from "../sections/HeaderSection/NavLinks"
 const Navbar = ({ logoSrc }) => {
   return (
     <nav className="main-nav">
-      <img src={logoSrc} alt="My Portfolio" className="logo" />;
+      <img src={logoSrc} alt="My Portfolio" className="logo" />
       <NavLinks />
     </nav>
   );

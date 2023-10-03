@@ -1,5 +1,5 @@
 import SpecialsItem from "./SpecialsItem";
-import { specializeItems } from "../../utils/homepage_data"
+import { specializeItems } from "../../utils/website_data"
 
 const Specialize = () => {
   return (

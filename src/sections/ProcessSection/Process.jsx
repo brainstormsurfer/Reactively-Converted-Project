@@ -1,4 +1,4 @@
-import { processItems } from "../../utils/homepage_data"
+import { processItems } from "../../utils/website_data"
 import ProcessItem from "./ProcessItem"
 
 const Process = () => {

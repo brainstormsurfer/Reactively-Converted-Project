@@ -1,5 +1,5 @@
 import React from 'react'
-import { statsItems } from '../../utils/homepage_data'
+import { statsItems } from '../../utils/website_data'
 import StatsItem from './StatsItem';
 
 const Stats = () => {
