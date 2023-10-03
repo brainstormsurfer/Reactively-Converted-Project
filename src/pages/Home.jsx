@@ -5,38 +5,13 @@
 // import Process from '../components/Process/Process'
 // import Footer from '../layouts/Footer'
 import "../styles/main.css";
-import TypeWriter from "../components/Typewriter.jsx";
 
-import logo from '../assets/img/logo.png';
-import Navbar from "../layouts/Navbar";
+import Header from "../layouts/Header";
 
 const Home = () => {
-  const words = ["Photographer", "Designer", "UI/UX Dev"];
-  const navLinks = [
-    { href: "index.html", current: true, text: "Home" },
-    { href: "about.html", text: "About" },
-    { href: "work.html", text: "Work" },
-    { href: "contact.html", text: "Contact" },
-  ];
   return (
-    <>
-      {/* <!-- Header --> */}
-      <header className="header-home">
-        <div className="container">          
-          <Navbar logoSrc={logo} links={navLinks} />
-          <div className="header-content">
-            <h1>
-              <TypeWriter words={words} wait={3000} />
-            </h1>
-            <p className="lead">
-              I specialize in graphic design, UI/UX and photography
-            </p>
-            <a href="work.html" className="btn-light">
-              View My Work
-            </a>
-          </div>
-        </div>
-      </header>
+    <>    
+      <Header />
 
       {/* <!-- Section A: Specialize --> */}
       <section className="home-a text-center py-2">

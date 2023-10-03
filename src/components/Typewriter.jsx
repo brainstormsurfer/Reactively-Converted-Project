@@ -1,85 +1,45 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
-class TypeWriter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      txt: '',
-      wordIndex: 0,
-      isDeleting: false,
+const TypeWriter = ({ words, wait }) => {
+  const [txt, setTxt] = useState('');
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const type = () => {
+      const current = wordIndex % words.length;
+      const fullTxt = words[current];
+
+      if (isDeleting) {
+        setTxt((prevTxt) => {
+          if (prevTxt.length === 0) {
+            setIsDeleting(false);
+            setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+            return '';
+          }
+          return prevTxt.slice(0, -1);
+        });
+      } else {
+        setTxt((prevTxt) => {
+          if (prevTxt === fullTxt) {
+            setIsDeleting(true);
+            return prevTxt;
+          }
+          return fullTxt.slice(0, prevTxt.length + 1);
+        });
+      }
     };
-    this.timeoutId = null; // Store the timeout ID
-  }
 
-  componentDidMount() {
-    this.type();
-  }
+    const timeoutId = setTimeout(type, wait);
 
-  componentWillUnmount() {
-    // Clear the timeout when the component unmounts
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-    }
-  }
+    return () => clearTimeout(timeoutId);
+  }, [txt, wordIndex, isDeleting, words, wait]);
 
-  type = () => {
-    const { words, wait } = this.props;
-    const { wordIndex } = this.state;
-    const current = wordIndex % words.length;
-    const fullTxt = words[current];
-
-    if (this.state.isDeleting) {
-      this.setState({ txt: fullTxt.substring(0, this.state.txt.length - 1) }, () => {
-        this.triggerType();
-      });
-    } else {
-      this.setState({ txt: fullTxt.substring(0, this.state.txt.length + 1) }, () => {
-        this.triggerType();
-      });
-    }
-
-    let typeSpeed = 300;
-
-    if (this.state.isDeleting) {
-      typeSpeed /= 2;
-    }
-
-    if (!this.state.isDeleting && this.state.txt === fullTxt) {
-      typeSpeed = wait;
-      this.setState({ isDeleting: true }, () => {
-        this.triggerType();
-      });
-    } else if (this.state.isDeleting && this.state.txt === '') {
-      this.setState((prevState) => ({
-        isDeleting: false,
-        wordIndex: prevState.wordIndex + 1,
-      }), () => {
-        this.triggerType();
-      });
-      typeSpeed = 500;
-    }
-
-    // Store the timeout ID
-    this.timeoutId = setTimeout(() => this.type(), typeSpeed);
-  };
-
-  triggerType = () => {
-    // Clear the previous timeout
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-    }
-    // Set a new timeout for the next animation step
-    this.timeoutId = setTimeout(() => this.type(), 300); // You can adjust the delay here
-  };
-
-  render() {
-    return (
-      <h1>
-        I Am John The{' '}
-        <span className="txt">{this.state.txt}</span>
-      </h1>
-    );
-  }
-}
+  return (
+    <h1>
+      I Am John The <span className="txt">{txt}</span>
+    </h1>
+  );
+};
 
 export default TypeWriter;

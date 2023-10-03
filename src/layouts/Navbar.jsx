@@ -1,19 +1,13 @@
 import React from "react";
+import NavLink from "../components/NavLink";
+import {nanoid} from 'nanoid'
 
 const Navbar = ({ logoSrc, links }) => {
   return (
     <nav className="main-nav">
       <img src={logoSrc} alt="My Portfolio" className="logo" />
       <ul>
-        {links.map((link) => {
-          return (
-            <li key={link.id}>
-              <a href={link.href} className={link.current ? "current" : ""}>
-                {link.text}
-              </a>
-            </li>
-          );
-        })}
+        {links.map((link) => <NavLink key={nanoid()} {...link}/>)}
       </ul>
     </nav>
   );
