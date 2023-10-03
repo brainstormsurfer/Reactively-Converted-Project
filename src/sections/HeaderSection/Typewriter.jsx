@@ -37,8 +37,7 @@ const TypeWriter = ({ words, wait }) => {
 
   return (
     <h1>
-      I Am John The <span className="txt">{txt}</span>
-    </h1>
+      I Am John The <span className="txt-type">{txt}</span></h1>
   );
 };
 

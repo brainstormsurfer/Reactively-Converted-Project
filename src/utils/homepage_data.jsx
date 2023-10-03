@@ -1,6 +1,6 @@
-import { FaFile, FaDesktop, FaObjectUnGroup, FaThumbsUp } from "react-icons/fa";
+import { FaFile, FaDesktop, FaObjectUngroup, FaThumbsUp } from "react-icons/fa";
 
-const specializeItems = [
+export const specializeItems = [
     {
       id: 1,
       title: "Concepting",
@@ -18,7 +18,7 @@ const specializeItems = [
     {
       id: 3,
       title: "Visual Design",
-      icon: <FaObjectUnGroup />,
+      icon: <FaObjectUngroup />,
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestias repellat quibusdam adipisci quas sed ullam accusantium aliquam numquam quclassNameem.",
     },
@@ -30,5 +30,3 @@ const specializeItems = [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestias repellat quibusdam adipisci quas sed ullam accusantium aliquam numquam quclassNameem.",
     },
   ];
-
-  export default specializeItems

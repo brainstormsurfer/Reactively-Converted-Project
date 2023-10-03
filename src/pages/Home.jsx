@@ -4,13 +4,15 @@
 // import Stats from '../components/Stats/Stats'
 // import Process from '../components/Process/Process'
 // import Footer from '../layouts/Footer'
-import Header from "../sections/HeaderSection/Header";
+import Header from "../sections/HeaderSection/Header"
 import "../styles/main.css";
+import Specialize from './../sections/SpecializeSection/Specialize';
 
 const Home = () => {
   return (
     <>    
       <Header />
+      <Specialize />
     </>
   );
 };

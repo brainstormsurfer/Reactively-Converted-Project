@@ -1,4 +1,4 @@
-import NavLink from "./NavLink.jsx";
+import NavLink from "./NavLink.jsx"; // This one is in both HeaderContent and Navbar
 import TypeWriter from "./Typewriter.jsx";
 
 const HeaderContent = () => {

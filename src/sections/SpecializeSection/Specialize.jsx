@@ -1,5 +1,5 @@
 import SpecialsItem from "./SpecialsItem";
-import { specializeItems } from '../../../utils/specializeData'
+import { specializeItems } from "../../utils/homepage_data"
 
 const Specialize = () => {
   return (
@@ -14,7 +14,7 @@ const Specialize = () => {
         <SpecialsItem />
         <div className="specials">
           {specializeItems.map((item) => (
-            <SpecialsItem key={id} {...item} />
+            <SpecialsItem key={item.id} {...item} />
           ))}
         </div>
       </div>

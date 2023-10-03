@@ -2,7 +2,7 @@ const NavLink = ({ href, current, text, fromHeader }) => {
   return (
     fromHeader ? (
       <li>
-        <a href={href} className="btn-light">
+        <a href={href} className="btn-light" >
           {text}
         </a>
       </li>

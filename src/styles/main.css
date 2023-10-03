@@ -226,7 +226,8 @@
   .header-home {
     background: url("../assets/img/showcase.jpg") no-repeat center right/cover;
     height: 100vh;
-    color: #fff; }
+    color: #fff;    
+  }
     .header-home .header-content {
       text-align: center;
       padding-top: 20%; }
@@ -234,6 +235,7 @@
         font-size: 4rem;
         line-height: 1.2;
         font-family: 'Dosis', sans-serif;
+    
        }
   
   .header-inner {
@@ -435,12 +437,6 @@
   padding: 20px 0; /* Adjust padding as needed */
 }
 
-.container {
-  max-width: 1200px; /* Maximum width of the container */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 0 20px; /* Add padding to the container */
-}
-
 #main-nav ul {
   list-style: none;
   padding: 0;
@@ -448,44 +444,44 @@
 
 #main-nav ul li {
   display: inline;
-  margin-right: 20px; /* Adjust spacing between navigation items */
+  margin-right: 20px; 
 }
 
 #logo {
   height: auto;
-  max-width: 100px; /* Adjust the logo size as needed */
+  max-width: 100px; 
 }
 
 /* Typewriter effect styling */
 .txt-type {
-  font-size: 36px; /* Adjust font size as needed */
+  font-size: 4rem;
+  line-height: 1.2;
   font-weight: bold;
   white-space: nowrap;
-  border-right: 3px solid #fff; /* Adjust the border color and size */
-  animation: typing 0.75s steps(40, end), blink-caret 0.5s step-end infinite;
+  border-right: 3px solid #fff; 
+  animation: typing 0.75s steps(40, end) infinite, blink-caret 0.9s step-end infinite;
   position: relative;
-  top: 2px; /* Adjust vertical position as needed */
+  top: 2px; 
 }
 
-/* Keyframes for typing effect and caret blinking */
 @keyframes typing {
-  from {
+  0% {
     width: 0;
+   
   }
-  to {
+  100% {
     width: 100%;
   }
 }
 
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
+@keyframes blink-caret {  
+  0% {
+    border-right: 3px solid #fff;   }
   50% {
-    border-color: #fff;
+    border-right: 3px solid transparent; 
   }
 }
+
 
 /* Additional styling for the header content */
 .header-content {
