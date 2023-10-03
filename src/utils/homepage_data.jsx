@@ -9,6 +9,46 @@ import {
   FaCodeBranch,
 } from "react-icons/fa";
 
+
+
+export const processItems = [
+    {
+      id: 1,
+      title: "Discuss The Project",
+      icon: <FaFile />,
+      processStep: 1,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestias repellat quibusdam adipisci quas sed ullam accusantium aliquam numquam quclassNameem.",
+    },
+    {
+      id: 2,
+      title: "Brainstorming ^ Concept",
+      icon: <FaDesktop />,
+      processStep: 2,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestias repellat quibusdam adipisci quas sed ullam accusantium aliquam numquam quclassNameem.",
+    },
+    {
+      id: 3,
+      title: "UI/UX Planning",
+      icon: <FaObjectUngroup />,
+      processStep: 3,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestias repellat quibusdam adipisci quas sed ullam accusantium aliquam numquam quclassNameem.",
+    },
+    {
+      id: 4,
+      title: "Interaction",
+      icon: <FaThumbsUp />,
+      processStep: 4,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestias repellat quibusdam adipisci quas sed ullam accusantium aliquam numquam quclassNameem.",
+    },
+  ];
+  
+
+
+
 export const statsItems = [
   {
     id: 1,

@@ -4,7 +4,7 @@ import StatsItem from './StatsItem';
 
 const Stats = () => {
   return (
-   <section id="home-b" className="text-center py-2">
+   <section className="home-b text-center py-2">
   <div className="stats">
     {statsItems.map((item) => <StatsItem key={item.id} {...item}/>)}
   </div>

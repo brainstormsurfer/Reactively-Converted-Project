@@ -431,18 +431,8 @@
 /* TypeWriter.css */
 
 /* Header styling */
-#header-home {
-  background-color: #333; /* Background color for the header */
-  color: #fff; /* Text color for the header */
-  padding: 20px 0; /* Adjust padding as needed */
-}
 
-#main-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-#main-nav ul li {
+.main-nav ul li {
   display: inline;
   margin-right: 20px;
 }

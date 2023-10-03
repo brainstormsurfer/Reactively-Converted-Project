@@ -5,6 +5,7 @@
 // import Process from '../components/Process/Process'
 // import Footer from '../layouts/Footer'
 import Header from "../sections/HeaderSection/Header"
+import Process from "../sections/Process/Process";
 import Stats from "../sections/Stats/Stats";
 import "../styles/main.css";
 import Specialize from './../sections/SpecializeSection/Specialize';
@@ -15,14 +16,14 @@ const Home = () => {
       <Header />
       <Specialize />
       <Stats />
+      <Process />
     </>
   );
 };
 
 export default Home;
 {
-  /* <Header />
- <Specialize />
- <Process />
+  /* 
+
  <Footer /> */
 }
