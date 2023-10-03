@@ -1,13 +1,11 @@
-import React from "react";
-
 const Gallery = () => {
   return (
-    <section id="work-a" className="text-center py-3">
+    <section className="work-a text-center py-3">
       <div className="container">
         <h2 className="section-title">My Work</h2>
         <div className="bottom-line" />
         <p className="lead">Check out some of my projects</p>
-        <div className="items">
+        {/* <div className="items">
           <div className="item">
             <div className="item-image">
               <img src="img/items/item1.png" alt />
@@ -107,7 +105,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

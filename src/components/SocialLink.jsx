@@ -1,6 +1,6 @@
-const SocialLink = ({icon}) => {
+const SocialLink = ({icon, awesomeClass}) => {
   return (
-    <i className='fab'>{icon}</i>
+    <i className={`fab ${awesomeClass}`}>{icon}</i>
   )
 }
 

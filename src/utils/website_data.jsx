@@ -14,10 +14,10 @@ import {
 } from "react-icons/fa";
 
 export const socialLinks = [
-  { id: 1, icon: <FaTwitter /> },
-  { id: 2, icon: <FaFacebook /> },
-  { id: 3, icon: <FaInstagram /> },
-  { id: 4, icon: <FaLinkedin /> },
+  { id: 1, awesomeClass:'fa-twitter', icon: <FaTwitter /> },
+  { id: 2, awesomeClass:'fa-twitter', icon: <FaFacebook /> },
+  { id: 3, awesomeClass:'fa-twitter', icon: <FaInstagram /> },
+  { id: 4, awesomeClass:'fa-twitter', icon: <FaLinkedin /> },
 ];
 
 export const processItems = [

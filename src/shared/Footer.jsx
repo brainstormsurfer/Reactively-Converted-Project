@@ -7,7 +7,7 @@ const Footer = () => {
   <div className="footer-content container">
     <p>Copyright © 2019. All Rights Reserved</p>
     <div className="social">
-      {socialLinks.map(({id, icon}) => <SocialLink key={id} icon={icon} />)}
+      {socialLinks.map(({id, icon, awesomeClass}) => <SocialLink key={id} icon={icon} />)}
     </div>
   </div>
 </footer>
