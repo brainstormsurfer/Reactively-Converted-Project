@@ -1,9 +1,17 @@
-import React from 'react'
 
-const GalleryItem = () => {
+
+export const GalleryItem = ({ source, category, title }) => {
   return (
-    <div>GalleryItem</div>
-  )
-}
-
-export default GalleryItem
+    <div className="item">
+      <div className="item-image">
+        <img src={source} alt="" />
+      </div>
+      <div className="item-text">
+        <div className="item-text-wrap">
+          <p className="item-text-category">{category}</p>
+          <h2 className="item-text-title">{title}</h2>
+        </div>
+      </div>
+    </div>
+  );
+};

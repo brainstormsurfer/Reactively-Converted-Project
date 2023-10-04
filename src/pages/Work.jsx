@@ -1,13 +1,12 @@
-import React from "react";
-import Header from "../components/layouts/Header.jsx";
 import Gallery from "../sections/GallerySection/Gallery.jsx";
-import Footer from "../components/layouts/Footer.jsx";
+import { Footer } from "../sections/index.js";
+import Navbar from './../shared/Navbar';
 
 const Work = () => {
   return (
     <>
-      <Header />
-      <Gallery />
+      <Navbar />
+      <Gallery />      
       <Footer />
     </>
   );
