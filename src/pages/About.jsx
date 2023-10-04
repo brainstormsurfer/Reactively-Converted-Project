@@ -26,7 +26,7 @@ const About = () => {
           </div>
         </section>
         {/* Section D: Testimonials */}
-       <Testimonials />
+        <Testimonials />
         {/* Footer */}
         {/* <Footer /> */}
       </div>

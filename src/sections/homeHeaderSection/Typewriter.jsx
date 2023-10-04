@@ -1,43 +1,38 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-const TypeWriter = ({ words, wait }) => {
-  const [txt, setTxt] = useState('');
-  const [wordIndex, setWordIndex] = useState(0);
+const TypeWriter = ({ words }) => {
+  const [index, setIndex] = useState(0);
+  const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const type = () => {
-      const current = wordIndex % words.length;
-      const fullTxt = words[current];
-
+    const interval = setInterval(() => {
       if (isDeleting) {
-        setTxt((prevTxt) => {
-          if (prevTxt.length === 0) {
-            setIsDeleting(false);
-            setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-            return '';
-          }
-          return prevTxt.slice(0, -1);
-        });
+        setText((prevText) => prevText.slice(0, -1));
       } else {
-        setTxt((prevTxt) => {
-          if (prevTxt === fullTxt) {
-            setIsDeleting(true);
-            return prevTxt;
-          }
-          return fullTxt.slice(0, prevTxt.length + 1);
-        });
+        setText((prevText) => words[index].slice(0, prevText.length + 1));
       }
-    };
+    }, 200);
 
-    const timeoutId = setTimeout(type, wait);
+    // Pause for 2 seconds after a word is fully typed
+    if (!isDeleting && text === words[index]) {
+      clearInterval(interval);
+      setTimeout(() => setIsDeleting(true), 2000);
+    }
 
-    return () => clearTimeout(timeoutId);
-  }, [txt, wordIndex, isDeleting, words, wait]);
+    // Reset after deleting
+    if (isDeleting && text === "") {
+      setIsDeleting(false);
+      setIndex((prevIndex) => (prevIndex + 1) % words.length);
+      setTimeout(() => setIsDeleting(false), 200); // Reset typing speed
+    }
 
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [index, text, isDeleting, words]);
   return (
-    <h1>
-      I Am John The <span className="txt-type">{txt}</span></h1>
+    <h1 >
+      I Am John The <span className="front-line-blinker">{text}</span>
+    </h1>
   );
 };
 

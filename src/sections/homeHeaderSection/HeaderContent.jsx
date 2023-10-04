@@ -2,11 +2,11 @@ import NavLink from "./NavLink.jsx"; // This one is in both HeaderContent and Na
 import TypeWriter from "./Typewriter.jsx";
 
 const HeaderContent = () => {
-  const words = ["Photographer", "Designer", "UI/UX Developer"];
+  const skills = ["Photographer", "Designer", "UI/UX Dev"];
 
   return (
     <div className="header-content">
-      <TypeWriter words={words} wait={300} />
+      <TypeWriter words ={skills} wait={300} />
       <p className="lead">
         I specialize in graphic design, UI/UX and photography
       </p>
