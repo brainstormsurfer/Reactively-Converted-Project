@@ -23,6 +23,10 @@ import image7 from "../../src/assets/img/items/item7.png";
 import image8 from "../../src/assets/img/items/item8.png";
 import image9 from "../../src/assets/img/items/item9.png";
 
+import aboutLogo1 from "../assets/img/about-logos/logo-envato.png";
+import aboutLogo2 from "../assets/img/about-logos/logo-wordpress.png";
+import aboutLogo3 from "../assets/img/about-logos/logo-woocommerce.png";
+import aboutLogo4 from "../assets/img/about-logos/logo-magento.png";
 // ====================================
 //!            Home Page
 // ====================================
@@ -169,6 +173,45 @@ export const galleryItems = [
 // ====================================
 //!             About
 // ====================================
+export const testimonials = [
+  {
+    id: 1,
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis quia nostrum nam ab vel laudantium, ea, corrupti culpa illum soluta ipsam eos, eius ad error voluptate sint? Non, fugit!",
+    person: "Sam Smith, New York",
+    imageSrc: "../../src/assets/img/testimonials/person1.jpg",
+  },
+  {
+    id: 2,
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis quia nostrum nam ab vel laudantium, ea, corrupti culpa illum soluta ipsam eos, eius ad error voluptate sint? Non, fugit!",
+    person: "Sara Williams, Michigan",
+    imageSrc: "../../src/assets/img/testimonials/person2.jpg",
+  },
+  {
+    id: 3,
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis quia nostrum nam ab vel laudantium, ea, corrupti culpa illum soluta ipsam eos, eius ad error voluptate sint? Non, fugit!",
+    person: "Jill Johnson, London",
+    imageSrc: "../../src/assets/img/testimonials/person3.jpg",
+  },
+  {
+    id: 4,
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis quia nostrum nam ab vel laudantium, ea, corrupti culpa illum soluta ipsam eos, eius ad error voluptate sint? Non,",
+    person: "Steve Thompson, Boston",
+    imageSrc: "../../src/assets/img/testimonials/person4.jpg",
+
+  },
+];
+
+export const aboutLogos = [
+  { id: 1, source: aboutLogo1, title: "envato logo" },
+  { id: 2, source: aboutLogo2, title: "wordpress logo" },
+  { id: 3, source: aboutLogo3, title: "woocommerce logo" },
+  { id: 4, source: aboutLogo4, title: "magneto logo" },
+];
+
 export const awards = [
   {
     id: "award-1",
@@ -194,12 +237,12 @@ export const awards = [
 ];
 
 export const skillsProgression = [
-  { skill: "Photography", progress: "100%" },
-  { skill: "Adobe Photoshop", progress: "80%" },
-  { skill: "Adobe Illustrator", progress: "70%" },
-  { skill: "HTML", progress: "100%" },
-  { skill: "Wordpress", progress: "80%" },
-  { skill: "Magento", progress: "70%" },
+  { skill: "Photography", progress: "100" },
+  { skill: "Adobe Photoshop", progress: "80" },
+  { skill: "Adobe Illustrator", progress: "70" },
+  { skill: "HTML", progress: "100" },
+  { skill: "Wordpress", progress: "80" },
+  { skill: "Magento", progress: "70" },
 ];
 
 // ====================================

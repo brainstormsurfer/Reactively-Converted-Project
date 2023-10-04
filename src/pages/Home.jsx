@@ -1,18 +1,20 @@
 import { Specialize, Process, Stats, Header, Footer } from "../sections";
+import About from "./About";
 
 const Home = () => {
   return (
     <>
       {/* Header */}
-      <Header />
       {/* <!-- Section A: Specialize --> */}
+      {/* <Header />
       <Specialize />
-      {/* <!-- Section B: Stats --> */}
       <Stats />
-      {/* <!-- Section C: Process --> */}
       <Process />
+      <Footer /> */}
+      {/* <!-- Section B: Stats --> */}
+      {/* <!-- Section C: Process --> */}
       {/* Footer */}
-      <Footer />
+      <About />
     </>
   );
 };

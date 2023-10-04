@@ -1,4 +1,5 @@
-import React from "react";
+import { testimonials } from "../../utils/website_data";
+import TestimonialItem from "./TestimonialItem";
 
 const Testimonials = () => {
   return (
@@ -10,62 +11,7 @@ const Testimonials = () => {
           Take a look at what my clients say...
         </p>
         <div className="testimonials">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates officiis quia nostrum nam ab vel laudantium, ea,
-              corrupti culpa illum soluta ipsam eos, eius ad error voluptate
-              sint? Non, fugit!
-            </p>
-            <ul>
-              <li>
-                <img src="img/testimonials//person1.jpg" alt />
-              </li>
-              <li>Sam Smith, New York</li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates officiis quia nostrum nam ab vel laudantium, ea,
-              corrupti culpa illum soluta ipsam eos, eius ad error voluptate
-              sint? Non, fugit!
-            </p>
-            <ul>
-              <li>
-                <img src="img/testimonials//person2.jpg" alt />
-              </li>
-              <li>Sara Williams, Michigan</li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates officiis quia nostrum nam ab vel laudantium, ea,
-              corrupti culpa illum soluta ipsam eos, eius ad error voluptate
-              sint? Non, fugit!
-            </p>
-            <ul>
-              <li>
-                <img src="img/testimonials//person3.jpg" alt />
-              </li>
-              <li>Jill Johnson, London</li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates officiis quia nostrum nam ab vel laudantium, ea,
-              corrupti culpa illum soluta ipsam eos, eius ad error voluptate
-              sint? Non, fugit!
-            </p>
-            <ul>
-              <li>
-                <img src="img/testimonials//person4.jpg" alt />
-              </li>
-              <li>Steve Thompson, Boston</li>
-            </ul>
-          </div>
+         {testimonials.map((testimonial) => <TestimonialItem key={testimonial.id} {...testimonial} />)}
         </div>
       </div>
     </section>

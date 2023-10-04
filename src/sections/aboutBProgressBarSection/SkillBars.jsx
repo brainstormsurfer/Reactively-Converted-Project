@@ -1,5 +1,5 @@
-import ProgressBar from "react";
-import skillsProgression from "../../utils/website_data";
+import ProgressBar from "./ProgressBar";
+import { skillsProgression } from "../../utils/website_data";
 import { nanoid } from "nanoid";
 
 const SkillBars = () => {
