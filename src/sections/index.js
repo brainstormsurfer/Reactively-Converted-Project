@@ -1,8 +1,8 @@
-import Header from "../sections/HeaderSection/Header";
-import Specialize from "./../sections/SpecializeSection/Specialize";
-import Process from "../sections/ProcessSection/Process";
-import Stats from "../sections/StatsSection/Stats";
+import Header from "./homeHeaderSection/Header";
+import Specialize from "./homeASpecializeSection/Specialize";
+import Process from "./homeCProcessSection/Process";
+import Stats from "./homeBStatsSection/Stats";
 import Footer from "../shared/Footer";
-import Gallery from "./GallerySection/Gallery";
+import Gallery from "./workGallerySection/Gallery";
 
 export { Header, Specialize, Process, Stats, Footer, Gallery };

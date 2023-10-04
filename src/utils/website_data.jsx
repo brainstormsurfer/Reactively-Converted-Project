@@ -1,6 +1,3 @@
-// ====================================
-//! Home Page 
-// ====================================
 import {
   FaFile,
   FaDesktop,
@@ -16,10 +13,22 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
+import image1 from "../../src/assets/img/items/item1.png";
+import image2 from "../../src/assets/img/items/item2.png";
+import image3 from "../../src/assets/img/items/item3.png";
+import image4 from "../../src/assets/img/items/item4.png";
+import image5 from "../../src/assets/img/items/item5.png";
+import image6 from "../../src/assets/img/items/item6.png";
+import image7 from "../../src/assets/img/items/item7.png";
+import image8 from "../../src/assets/img/items/item8.png";
+import image9 from "../../src/assets/img/items/item9.png";
+
+// ====================================
+//!            Home Page
+// ====================================
 // ====================================
 //? used at Process (Home page)
 // ====================================
-
 export const processItems = [
   {
     id: 1,
@@ -58,7 +67,6 @@ export const processItems = [
 // ====================================
 //? used at Stats (Home page)
 // ====================================
-
 export const statsItems = [
   {
     id: 1,
@@ -89,7 +97,6 @@ export const statsItems = [
 // ====================================
 //? used at Specialize (Home page)
 // ====================================
-
 export const specializeItems = [
   {
     id: 1,
@@ -121,43 +128,87 @@ export const specializeItems = [
   },
 ];
 
-
 // ====================================
-//! Work Page 
+//!            Work Page
 // ====================================
-import image1 from '../../src/assets/img/items/item1.png'
-import image2 from '../../src/assets/img/items/item2.png'
-import image3 from '../../src/assets/img/items/item3.png'
-import image4 from '../../src/assets/img/items/item4.png'
-import image5 from '../../src/assets/img/items/item5.png'
-import image6 from '../../src/assets/img/items/item6.png'
-import image7 from '../../src/assets/img/items/item7.png'
-import image8 from '../../src/assets/img/items/item8.png'
-import image9 from '../../src/assets/img/items/item9.png'
-
 // ====================================
 //? used at Gallery (Work Page)
 // ====================================
-
 export const galleryItems = [
-  {id: 1, source: image1, category: "Design" , title: "Great Gradients"},
-  {id: 2, source: image2, category: ">UI/UX" , title: "World Experience"},
-  {id: 3, source: image3, category: "Photography & Design" , title: "Vanishing"},
-  {id: 4, source: image4, category: "Design" , title: "Gap INC"},
-  {id: 5, source: image5, category: "Mobile UI Design" , title: "Face THe Experience"},
-  {id: 6, source: image6, category: "Design Concept" , title: "Bezier Curves"},
-  {id: 7, source: image7, category: "Photography" , title: "Dock Ponder<"},
-  {id: 8, source: image8, category: "Web Applications" , title: "Restaurant App"},
-  {id: 9, source: image9, category: "Social Network Concept" , title: "FriendFeed"},
-]
+  { id: 1, source: image1, category: "Design", title: "Great Gradients" },
+  { id: 2, source: image2, category: ">UI/UX", title: "World Experience" },
+  {
+    id: 3,
+    source: image3,
+    category: "Photography & Design",
+    title: "Vanishing",
+  },
+  { id: 4, source: image4, category: "Design", title: "Gap INC" },
+  {
+    id: 5,
+    source: image5,
+    category: "Mobile UI Design",
+    title: "Face THe Experience",
+  },
+  { id: 6, source: image6, category: "Design Concept", title: "Bezier Curves" },
+  { id: 7, source: image7, category: "Photography", title: "Dock Ponder<" },
+  {
+    id: 8,
+    source: image8,
+    category: "Web Applications",
+    title: "Restaurant App",
+  },
+  {
+    id: 9,
+    source: image9,
+    category: "Social Network Concept",
+    title: "FriendFeed",
+  },
+];
 
 // ====================================
-//! Footer
+//!             About
+// ====================================
+export const awards = [
+  {
+    id: "award-1",
+    title: "Award One",
+    icon: <FaAward />,
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magni!",
+  },
+  {
+    id: "award-2",
+    title: "Award Two",
+    icon: <FaAward />,
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magni!",
+  },
+  {
+    id: "award-3",
+    title: "Award Three",
+    icon: <FaAward />,
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magni!",
+  },
+];
+
+export const skillsProgression = [
+  { skill: "Photography", progress: "100%" },
+  { skill: "Adobe Photoshop", progress: "80%" },
+  { skill: "Adobe Illustrator", progress: "70%" },
+  { skill: "HTML", progress: "100%" },
+  { skill: "Wordpress", progress: "80%" },
+  { skill: "Magento", progress: "70%" },
+];
+
+// ====================================
+//!              Footer
 // ====================================
 
 export const socialLinks = [
-  { id: 1, awesomeClass:'fa-twitter', icon: <FaTwitter /> },
-  { id: 2, awesomeClass:'fa-twitter', icon: <FaFacebook /> },
-  { id: 3, awesomeClass:'fa-twitter', icon: <FaInstagram /> },
-  { id: 4, awesomeClass:'fa-twitter', icon: <FaLinkedin /> },
+  { id: 1, awesomeClass: "fa-twitter", icon: <FaTwitter /> },
+  { id: 2, awesomeClass: "fa-twitter", icon: <FaFacebook /> },
+  { id: 3, awesomeClass: "fa-twitter", icon: <FaInstagram /> },
+  { id: 4, awesomeClass: "fa-twitter", icon: <FaLinkedin /> },
 ];
