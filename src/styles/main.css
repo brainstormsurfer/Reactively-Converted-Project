@@ -231,7 +231,7 @@ input[class^="btn-"]:hover {
 }
 
 body {  
-  font-family: "Dosis", sans-serif;
+  font-family: var(--font-family);
   line-height: 1.6;
   background: #fff;
   overflow-x: hidden;
@@ -313,7 +313,6 @@ img {
 .header-home .header-content h1 {
   font-size: 4rem;
   line-height: 1.2;
-  font-family: "Dosis", sans-serif;
 }
 
 .header-inner {
@@ -602,7 +601,6 @@ img {
 
 .txt {
   position: relative;
-  font-family: "Dosis", sans-serif;
   color: var(--home-nav-font-color);
   text-align: center;
   font-size: 4rem;
@@ -727,8 +725,7 @@ p.lead {
 
 .page_404 {
   padding: 40px 0;
-  background: #fff;
-  /* font-family: "Arvo", serif; */
+  background: #fff;  
   height: auto;
 }
 
