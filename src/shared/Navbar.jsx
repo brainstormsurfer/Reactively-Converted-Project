@@ -1,4 +1,6 @@
 import { NavLink, useLocation, Link } from "react-router-dom";
+import logo from '../assets/img/logo.png';
+
 
 const Navbar = () => {
   const location = useLocation();
@@ -8,7 +10,7 @@ const Navbar = () => {
       <div className="container">
         <nav className="main-nav">
           <img
-            src="../../src/assets/img/logo.png"
+            src={logo}
             alt="logo"
             className="logo"
           />

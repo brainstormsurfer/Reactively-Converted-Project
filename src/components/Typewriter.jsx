@@ -15,7 +15,7 @@ const TypeWriter = ({ words }) => {
 
       if (!isDeleting && text === words[index]) {
         clearInterval(interval);
-        setTimeout(() => setIsDeleting(true), 1500); // Pause before deleting
+        setTimeout(() => setIsDeleting(true), 1500); // Pause before deleting letters
       }
 
       if (isDeleting && text === "") {

@@ -7,7 +7,6 @@ const Header = () => {
   const skills = ["Photographer", "Designer", "UI/UX Dev"];
 
   return (   
-    <>
         <div className="header-container">
         <div className="header-content">
         {isHomeRoute && <TypeWriter words={skills} />}
@@ -19,7 +18,6 @@ const Header = () => {
             </Link>  
         </div>
         </div>
-      </>
   );
 };
 
