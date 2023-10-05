@@ -13,3 +13,7 @@ This project involves converting an existing HTML/CSS web page into a React appl
 - Creating a routing structure to navigate between different sections or pages.
 - Handling data and state management as required.
 - Integrating any necessary third-party libraries or packages.
+
+
+![image](https://github.com/brainstormsurfer/html-to-react_conversion-exercise/assets/136093776/79c45fab-ea76-402f-a7c9-3a4beb3b609e)
+
