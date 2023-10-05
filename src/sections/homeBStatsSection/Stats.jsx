@@ -1,6 +1,5 @@
-import React from 'react'
 import { statsItems } from '../../utils/website_data'
-import StatsItem from './StatsItem';
+import { StatsItem } from '../index';
 
 const Stats = () => {
   return (

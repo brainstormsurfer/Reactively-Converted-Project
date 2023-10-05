@@ -5,11 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-nav {
-  background-color: #000;
-  color: #ccc;
-  align-items: center;  
-}
 
 .container {
   max-width: 1280px;
@@ -119,6 +114,22 @@ input[class^="btn-"]:hover {
   font-weight: 100;
   text-transform: uppercase;
 }
+/* ------- (Added) ------- */
+/* Navbar mode on Homepage */
+.transparent-navbar {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.transparent-navbar .main-nav {
+  justify-content: space-around;
+}
+/* ---------------------------*/
 
 .bottom-line {
   height: 2px;
@@ -271,7 +282,7 @@ img {
   cursor: pointer;
   border-color: #ccc;
 }
-.main-nav a.current {
+.main-nav a.active {
   border-color: #ffbc00;
 }
 

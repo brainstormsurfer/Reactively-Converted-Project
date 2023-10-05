@@ -1,6 +1,4 @@
-
-
-export const GalleryItem = ({ source, category, title }) => {
+const GalleryItem = ({ source, category, title }) => {
   return (
     <div className="item">
       <div className="item-image">
@@ -15,3 +13,5 @@ export const GalleryItem = ({ source, category, title }) => {
     </div>
   );
 };
+
+export default GalleryItem

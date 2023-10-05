@@ -1,4 +1,4 @@
-import GalleryItems from "./GalleryItems";
+import {GalleryItems} from "../index";
 
 const Gallery = () => {
   return (

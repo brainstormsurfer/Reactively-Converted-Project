@@ -1,4 +1,4 @@
-import Award from "./Award";
+import { Award } from "../index";
 import { awards } from "../../utils/website_data";
 
 const AboutMe = () => {

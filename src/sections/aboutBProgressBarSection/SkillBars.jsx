@@ -1,4 +1,4 @@
-import ProgressBar from "./ProgressBar";
+import { ProgressBar } from '../index'
 import { skillsProgression } from "../../utils/website_data";
 import { nanoid } from "nanoid";
 

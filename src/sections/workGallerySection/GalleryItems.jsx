@@ -1,5 +1,5 @@
 import { galleryItems } from "../../utils/website_data";
-import { GalleryItem } from "./GalleryItem";
+import { GalleryItem } from "../index";
 
 const GalleryItems = () => {
   return (

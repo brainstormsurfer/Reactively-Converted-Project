@@ -1,4 +1,3 @@
-
 const StatsItem = ({title, icon, statsNumber}) => {
   return (
     <div>

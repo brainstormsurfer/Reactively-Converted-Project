@@ -1,5 +1,3 @@
-import React from "react";
-
 const Award = ({ id, title, icon, description }) => {
   return (
     <div className={id}>

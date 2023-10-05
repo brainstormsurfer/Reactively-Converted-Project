@@ -1,4 +1,3 @@
-
 const SpecialsItem = ({title, icon, description}) => {
   return (
         <div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProcessItem = ({ title, processStep, icon, description }) => {
   return (
     <div>

@@ -1,16 +1,9 @@
-// import Header from "../components/layouts/Header";
-// import Footer from "../components/layouts/Footer";
-import Info from "../sections/aboutAInfoSection/Info";
-// import Testimonials from "../components/Testimonials/Testimonials";
-import SkillBars from "../sections/aboutBProgressBarSection/SkillBars";
 import { aboutLogos } from "../utils/website_data";
-import AboutLogo from "../sections/aboutCLogosSection/AboutLogo";
-import Testimonials from "../sections/aboutDTestimonialsSection/Testimonials";
+import { Info, SkillBars, AboutLogo,  Testimonials } from '../sections'
+
 const About = () => {
   return (
-    <>
       <div>
-        {/* <Header /> */}
         {/* Section A: Info */}
         <Info />
         {/* Section B: Progress Bars */}
@@ -26,11 +19,8 @@ const About = () => {
           </div>
         </section>
         {/* Section D: Testimonials */}
-        <Testimonials />
-        {/* Footer */}
-        {/* <Footer /> */}
+        <Testimonials />              
       </div>
-    </>
   );
 };
 

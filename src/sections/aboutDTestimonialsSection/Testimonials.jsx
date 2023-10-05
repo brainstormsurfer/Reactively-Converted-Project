@@ -1,5 +1,5 @@
 import { testimonials } from "../../utils/website_data";
-import TestimonialItem from "./TestimonialItem";
+import { TestimonialItem } from "../index";
 
 const Testimonials = () => {
   return (
