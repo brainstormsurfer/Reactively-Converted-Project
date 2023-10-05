@@ -591,18 +591,16 @@ img {
   font-size: 4rem;
   line-height: 3.2;
   font-weight: 600;
-  /* text-shadow: #FC0 1px 0 10px; */
 }
 
-/* Additional styling for the header content */
 .header-content {
   text-align: center;
   margin-top: 20vh; 
 }
 
 p.lead {
-  font-size: 1.5rem; /* Adjust font size as needed */
-  margin-top: 20px; /* Adjust top margin as needed */
+  font-size: 1.5rem;
+  margin-top: 20px; 
 }
 
 .btn-light:hover {
