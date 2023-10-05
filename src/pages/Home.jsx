@@ -2,7 +2,7 @@ import { Specialize, Process, Stats, Header } from "../sections";
 
 const Home = () => {
   return (
-    <>
+    <>      
       {/* Header */}
       <Header />
       {/* <!-- Section A: Specialize --> */}

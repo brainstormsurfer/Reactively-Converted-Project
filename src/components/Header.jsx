@@ -7,8 +7,8 @@ const Header = () => {
   const skills = ["Photographer", "Designer", "UI/UX Dev"];
 
   return (   
-    <header className="header-home">
-      <div className="container">
+    <>
+        <div className="header-container">
         <div className="header-content">
         {isHomeRoute && <TypeWriter words={skills} />}
           <p className="lead">
@@ -18,8 +18,8 @@ const Header = () => {
               View My Work
             </Link>  
         </div>
-      </div>
-      </header>
+        </div>
+      </>
   );
 };
 

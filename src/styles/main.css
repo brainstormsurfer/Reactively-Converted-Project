@@ -117,18 +117,22 @@ input[class^="btn-"]:hover {
 /* ------- (Added) ------- */
 /* Navbar mode on Homepage */
 .transparent-navbar {
+  /* display: flex;
+  justify-content: space-between; */
   background: transparent;
   position: absolute;
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 1rem 0;
+  min-width: 100vw; 
+  z-index: 10;
 }
 
-.transparent-navbar .main-nav {
+/* .transparent-navbar .main-nav {
   justify-content: space-around;
-}
+} */
 /* ---------------------------*/
 
 .bottom-line {
@@ -226,10 +230,11 @@ input[class^="btn-"]:hover {
   margin: 0;
 }
 
-body {
+body {  
   font-family: "Dosis", sans-serif;
   line-height: 1.6;
   background: #fff;
+  overflow-x: hidden; 
 }
 
 a {
@@ -262,6 +267,7 @@ img {
 .main-nav {
   display: flex;
   justify-content: space-between;
+
   padding-top: 1rem;
 }
 .main-nav ul {
@@ -285,16 +291,25 @@ img {
 .main-nav a.active {
   border-color: var(--primary-color);
 }
-
-.header-home {
-  background: url("../assets/img/showcase.jpg") no-repeat center right/cover;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  color: var(--home-nav-font-color);
+  background: url("../assets/img/showcase.jpg") no-repeat center right/cover;
+  color: #fff;
 }
-.header-home .header-content {
+
+.header-content {
   text-align: center;
-  padding-top: 20%;
 }
+
+.header-content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
 .header-home .header-content h1 {
   font-size: 4rem;
   line-height: 1.2;
@@ -525,7 +540,7 @@ img {
 }
 
 .main-footer {
-  position: sticky;
+  width: 100%;
   bottom: 0;
   background: var(--secondary-color-dark);
   color: var(--home-nav-font-color);

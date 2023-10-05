@@ -5,7 +5,7 @@ const Navbar = () => {
   const isHomeRoute = location.pathname === "/";
   return (
     <header className={`${!isHomeRoute ? "header-inner" : "transparent-navbar"}`}>
-      <div class="container">
+      <div className="container">
         <nav className="main-nav">
           <img
             src="../../src/assets/img/logo.png"
