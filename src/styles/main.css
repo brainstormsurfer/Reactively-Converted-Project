@@ -525,6 +525,8 @@ img {
 }
 
 .main-footer {
+  position: sticky;
+  bottom: 0;
   background: var(--secondary-color-dark);
   color: var(--home-nav-font-color);
   height: 5rem;
@@ -712,7 +714,7 @@ p.lead {
   padding: 40px 0;
   background: #fff;
   /* font-family: "Arvo", serif; */
-  height: 83vh;
+  height: auto;
 }
 
 .page_404 img {

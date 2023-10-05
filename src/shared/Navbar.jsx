@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/work"
+                to="/about"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
                 Connect

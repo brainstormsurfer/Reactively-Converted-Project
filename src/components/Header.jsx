@@ -11,7 +11,6 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
         {isHomeRoute && <TypeWriter words={skills} />}
-          {/* <TypeWriter words={skills} wait={300} /> */}
           <p className="lead">
             I specialize in graphic design, UI/UX and photography
           </p>

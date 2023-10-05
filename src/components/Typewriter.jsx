@@ -15,17 +15,17 @@ const TypeWriter = ({ words }) => {
 
       if (!isDeleting && text === words[index]) {
         clearInterval(interval);
-        setTimeout(() => setIsDeleting(true), 1500); // Pause for 5 seconds before deleting
+        setTimeout(() => setIsDeleting(true), 1500); // Pause before deleting
       }
 
       if (isDeleting && text === "") {
         setIsDeleting(false);
         setIndex((prevIndex) => (prevIndex + 1) % words.length);
-        setTypingSpeed(200); // Reset typing speed
+        setTypingSpeed(200); 
       }
-    }, typingSpeed); // Typing speed
+    }, typingSpeed);
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval); 
   }, [index, text, isDeleting, words, typingSpeed]);
 
   return (
