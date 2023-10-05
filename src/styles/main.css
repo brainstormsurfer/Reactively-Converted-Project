@@ -114,26 +114,6 @@ input[class^="btn-"]:hover {
   font-weight: 100;
   text-transform: uppercase;
 }
-/* ------- (Added) ------- */
-/* Navbar mode on Homepage */
-.transparent-navbar {
-  /* display: flex;
-  justify-content: space-between; */
-  background: transparent;
-  position: absolute;
-  max-width: 1280px;
-  padding: 0 1.5rem;
-  margin: auto;
-  top: 0;
-  left: 0;
-  min-width: 100vw; 
-  z-index: 10;
-}
-
-/* .transparent-navbar .main-nav {
-  justify-content: space-around;
-} */
-/* ---------------------------*/
 
 .bottom-line {
   height: 2px;
@@ -299,6 +279,19 @@ img {
   height: 100vh;
   background: url("../assets/img/showcase.jpg") no-repeat center right/cover;
   color: #fff;
+}
+
+
+/* Navbar on Homepage (Added)  */
+.transparent-navbar {
+  background: transparent;
+  position: absolute;
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  top: 0;
+  left: 0;
+  min-width: 100vw; 
 }
 
 .header-content {
